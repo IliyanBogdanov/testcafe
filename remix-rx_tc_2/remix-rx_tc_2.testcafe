@@ -1,0 +1,494 @@
+{
+   "fixtures":[
+      {
+         "name":"reMIX-RX_TC_2",
+         "pageUrl":"about:blank",
+         "tests":[
+            {
+               "name":"reMIX-RX_TC-2.1",
+               "commands":[
+                  {
+                     "callsite":"0",
+                     "studio":{
+                        
+                     },
+                     "type":"maximize-window"
+                  },
+                  {
+                     "type":"execute-async-expression",
+                     "studio":{
+                        
+                     },
+                     "callsite":"34",
+                     "expression":"await t.navigateTo(process.env.URL)\r\n\r\nconst loginCredentials = require('./../../Credentials/UserCredentials.json')\r\n\r\nawait t\r\n    .typeText('input[id=username]', loginCredentials.PTITU06.username)\r\n    .typeText('input[id=password]', loginCredentials.WRONG.password)"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"38",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[value=Login]')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"10",
+                     "path":"./tc_2/1.png"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('p').withText('Incorrect login/password combination').textContent"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.error').textContent"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.modal-content p').withText('Incorrect login/password combination').textContent"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.modal-content .error').textContent"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.modal-content form p').textContent"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('div').nth(1).find('div form p').textContent"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".textContent"
+                     },
+                     "callsite":"9",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('p').withText('Incorrect login/password combination').textContent"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"Incorrect login/password combination\""
+                     }
+                  },
+                  {
+                     "type":"execute-async-expression",
+                     "studio":{
+                        
+                     },
+                     "callsite":"18",
+                     "expression":"await t\r\n    .click('input[id=username]')\r\n    .pressKey('ctrl+a delete');"
+                  },
+                  {
+                     "type":"execute-async-expression",
+                     "studio":{
+                        
+                     },
+                     "callsite":"35",
+                     "expression":"const loginCredentials = require('./../../Credentials/UserCredentials.json')\r\n\r\nawait t\r\n    .typeText('input[id=username]', loginCredentials.PTITU06.username)\r\n    .typeText('input[id=password]', loginCredentials.PTITU06.password)"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"39",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[value=Login]')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"23",
+                     "path":"./tc_2/2.png"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('a').withText('Log Off').exists"
+                              },
+                              "ruleType":"$edited$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('a').withText('New').exists"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_T').exists"
+                              },
+                              "ruleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_ a').withText('New').exists"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_ [title=\"New Pm Analysis\"]').exists"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_ .dxm-content.dxm-hasText.dx.dxalink').exists"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"New Pm Analysis\"]').nth(1).exists"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"New Pm Analysis\"] a').withText('New').exists"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxm-content.dxm-hasText.dx.dxalink').nth(2).exists"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[class^=\"dxm-item dropDownNew dxm-noSubMenu dxm-noImage dxm\"] a').withText('New').exists"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div table tbody tr td').nth(5).find('table tbody tr td div div div div ul li a').exists"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".exists"
+                     },
+                     "callsite":"32",
+                     "assertionType":"ok",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('a').withText('Log Off').exists"
+                     },
+                     "options":{
+                        
+                     },
+                     "message":"Verify that user is logged in."
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"24",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Log Off')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"execute-async-expression",
+                     "studio":{
+                        
+                     },
+                     "callsite":"31",
+                     "expression":"await t\r\n    .click('input[id=username]')\r\n    .pressKey('ctrl+a delete');"
+                  },
+                  {
+                     "type":"execute-async-expression",
+                     "studio":{
+                        
+                     },
+                     "callsite":"25",
+                     "expression":"const loginCredentials = require('./../../Credentials/UserCredentials.json');\r\n\r\nawait t\r\n    .typeText('input[id=username]', loginCredentials.PTITA01.username)\r\n    .typeText('input[id=password]', loginCredentials.PTITA01.password)"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"40",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[value=Login]')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"36",
+                     "path":"./tc_2/3.png"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('a').withText('New').exists"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_T').exists"
+                              },
+                              "ruleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_ a').withText('New').exists"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_ [title=\"New Pm Analysis\"]').exists"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_mainMenu_Menu_DXI0_ .dxm-content.dxm-hasText.dx.dxalink').exists"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"New Pm Analysis\"]').nth(1).exists"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"New Pm Analysis\"] a').withText('New').exists"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxm-content.dxm-hasText.dx.dxalink').nth(2).exists"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[class^=\"dxm-item dropDownNew dxm-noSubMenu dxm-noImage dxm\"] a').withText('New').exists"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div table tbody tr td').nth(5).find('table tbody tr td div div div div ul li a').exists"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".exists"
+                     },
+                     "callsite":"37",
+                     "assertionType":"ok",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('a').withText('Log Off').exists"
+                     },
+                     "options":{
+                        
+                     },
+                     "message":"Verify that user is logged in."
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"30",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Log Off')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"29",
+                     "path":"./tc_2/4.png"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('span').withText('Quick Access Login QA.').innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.title').innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.modal-content span').withText('Quick Access Login QA.').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.modal-content .title').innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.modal-content span').innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('div').nth(1).find('div span').innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"33",
+                     "assertionType":"ok",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Quick Access Login').innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "message":"Verify that user is logged out."
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

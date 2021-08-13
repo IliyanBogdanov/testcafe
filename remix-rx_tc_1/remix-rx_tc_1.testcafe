@@ -1,0 +1,1594 @@
+{
+   "fixtures":[
+      {
+         "name":"reMIX-RX_TC_1",
+         "pageUrl":"about:blank",
+         "tests":[
+            {
+               "name":"reMIX-RX_TC-1.1",
+               "commands":[
+                  {
+                     "callsite":"30",
+                     "studio":{
+                        
+                     },
+                     "type":"maximize-window"
+                  },
+                  {
+                     "type":"execute-async-expression",
+                     "studio":{
+                        
+                     },
+                     "callsite":"31",
+                     "expression":"await t.navigateTo(process.env.URL)\r\n\r\nconst loginCredentials = require('./../../Credentials/UserCredentials.json')\r\n\r\nawait t\r\n    .typeText('input[id=username]', loginCredentials.PTITU06.username)\r\n    .typeText('input[id=password]', loginCredentials.PTITU06.password)\r\n    .click(Selector('input[value=Login]'))"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"0",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Sites')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"1",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('New')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        
+                     },
+                     "callsite":"2",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[id*=Abbreviation_Edit_I]')"
+                     },
+                     "options":{
+                        
+                     },
+                     "text":"ST_01"
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        
+                     },
+                     "callsite":"15",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[id*=SiteType_Edit_I]')"
+                     },
+                     "options":{
+                        
+                     },
+                     "text":"DP"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"5",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Save')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_23568835_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_22266652_LE_v4_DXFREditorcol5_I')"
+                              },
+                              "ruleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_23568835_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_22266652_LE_v4_DXFREditorcol5 [name^=\"Vertical$v2_23568835$MainLayoutEdit$xaf_l23_pg$xaf\"]')"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_23568835_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_22266652_LE_v4_DXFREditorcol5 .dxeEditArea_XafTheme.dxeEditAreaSys')"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_23568835_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_22266652_LE_v4_DXFREditorcol5 tbody tr td input')"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name^=\"Vertical$v2_23568835$MainLayoutEdit$xaf_l23_pg$xaf\"]').nth(3)"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] [name^=\"Vertical$v2_23568835$MainLayoutEdit$xaf_l23_pg$xaf\"]').nth(3)"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] .dxeEditArea_XafTheme.dxeEditAreaSys').nth(15)"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(15)"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxic').nth(15).find('[name^=\"Vertical$v2_23568835$MainLayoutEdit$xaf_l23_pg$xaf\"]')"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(8).find('td').nth(109).find('table tbody tr td table tbody tr td input')"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "offsetX":79,
+                        "offsetY":14
+                     },
+                     "callsite":"33",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(15)"
+                     },
+                     "options":{
+                        
+                     },
+                     "text":"ObjectCreated"
+                  },
+                  {
+                     "type":"press-key",
+                     "studio":{
+                        
+                     },
+                     "callsite":"36",
+                     "keys":"enter",
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"55",
+                     "path":"./tc_1/1.png"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('N/A').nth(2).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXDataRow0 td').withText('N/A').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXDataRow0 .dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXDataRow0 td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('N/A').nth(2).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] .dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(27).find('div').nth(2).find('div div table').nth(11).find('tbody tr').nth(1).find('td div div div').nth(15).find('div table tbody tr td table tbody tr').nth(40).find('td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxgvDataRow_XafTheme.dxgvLVR td').withText('N/A').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(27).find('div').nth(2).find('div div table').nth(11).find('tbody tr').nth(1).find('td div div div').nth(15).find('div table tbody tr td table tbody tr').nth(40).find('td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"32",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('N/A').nth(2).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"N/A\""
+                     },
+                     "message":"One log exists with blank value for Property Name."
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(15)"
+                              },
+                              "ruleType":"$edited$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5_I')"
+                              },
+                              "ruleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5 [name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]')"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5 .dxeEditArea_XafTheme.dxeEditAreaSys')"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5 tbody tr td input')"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]').nth(2)"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] [name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]').nth(2)"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] .dxeEditArea_XafTheme.dxeEditAreaSys').nth(4)"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(4)"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxic').nth(4).find('[name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]')"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(27).find('div').nth(2).find('div div table').nth(11).find('tbody tr').nth(1).find('td div div div').nth(15).find('div table tbody tr td table tbody tr').nth(8).find('td').nth(109).find('table tbody tr td table tbody tr td input')"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "offsetX":101,
+                        "offsetY":9
+                     },
+                     "callsite":"34",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(15)"
+                     },
+                     "options":{
+                        "replace":true
+                     },
+                     "text":"InitialValueAssigned"
+                  },
+                  {
+                     "type":"press-key",
+                     "studio":{
+                        
+                     },
+                     "callsite":"37",
+                     "keys":"enter",
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"56",
+                     "path":"./tc_1/2.png"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('Abbreviation').nth(5).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_19021567_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_33256869_LE_v4_DXDataRow1 td').withText('Abbreviation').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_19021567_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_33256869_LE_v4_DXDataRow1 [title=\"Abbreviation\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_19021567_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_33256869_LE_v4_DXDataRow1 .dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_19021567_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_33256869_LE_v4_DXDataRow1 td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"Abbreviation\"]').innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('Abbreviation').nth(5).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(9).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxgvDataRow_XafTheme.dxgvDataRowAlt_XafTheme td').withText('Abbreviation').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(41).find('td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"35",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('Abbreviation').nth(5).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"Abbreviation\""
+                     },
+                     "message":"Property Name = Abbreviation exists"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('ST_01').nth(3).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_46447899_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_9687851_LE_v4_DXDataRow3 td').withText('ST_01').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_46447899_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_9687851_LE_v4_DXDataRow3 [title=\"ST_01\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_46447899_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_9687851_LE_v4_DXDataRow3 .dx-nowrap.dxgv.dx-al').nth(5).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_46447899_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_9687851_LE_v4_DXDataRow3 td').nth(6).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"ST_01\"]').nth(1).innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('ST_01').nth(3).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(23).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[class^=\"dxgvDataRow_XafTheme dxgvDataRowAlt_XafTheme dxgvL\"] td').withText('ST_01').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(43).find('td').nth(6).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"41",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('ST_01').nth(3).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"ST_01\""
+                     },
+                     "message":"New Value = ST_01 exists"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('SiteType').nth(1).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 td').withText('SiteType').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 [title=\"SiteType\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 .dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"SiteType\"]').innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('SiteType').nth(1).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxgvDataRow_XafTheme td').withText('SiteType').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(40).find('td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"42",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('SiteType').nth(1).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"SiteType\""
+                     },
+                     "message":"Property Name = SiteType exists"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('DP').nth(1).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 td').withText('DP').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 [title=\"DP\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 .dx-nowrap.dxgv.dx-al').nth(5).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 td').nth(6).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"DP\"]').innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('DP').nth(1).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(5).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxgvDataRow_XafTheme.over td').withText('DP').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(40).find('td').nth(6).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"43",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('DP').nth(1).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"DP\""
+                     },
+                     "message":"New Value = DP exists"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('RecordIdentifier').nth(1).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow3 td').withText('RecordIdentifier').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow3 [title=\"RecordIdentifier\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow3 .dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow3 td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"RecordIdentifier\"]').innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('RecordIdentifier').nth(1).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(21).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[class^=\"dxgvDataRow_XafTheme dxgvDataRowAlt_XafTheme dxgvL\"] td').withText('RecordIdentifier').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(43).find('td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"44",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('RecordIdentifier').nth(1).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"RecordIdentifier\""
+                     },
+                     "message":"Property Name = RecordIdentifier exists"
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        
+                     },
+                     "callsite":"28",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[id*=SiteType_Edit_I]')"
+                     },
+                     "options":{
+                        "replace":true
+                     },
+                     "text":"DS"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"19",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Save')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(15)"
+                              },
+                              "ruleType":"$edited$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5_I')"
+                              },
+                              "ruleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5 [name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]')"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5 .dxeEditArea_XafTheme.dxeEditAreaSys')"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v14_14280038_MainLayoutEdit_xaf_l121_xaf_dviAuditTrail_v15_59892682_LE_v15_DXFREditorcol5 tbody tr td input')"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]').nth(2)"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] [name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]').nth(2)"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] .dxeEditArea_XafTheme.dxeEditAreaSys').nth(4)"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(4)"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxic').nth(4).find('[name^=\"Vertical$v14_14280038$MainLayoutEdit$xaf_l121$xaf_\"]')"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(27).find('div').nth(2).find('div div table').nth(11).find('tbody tr').nth(1).find('td div div div').nth(15).find('div table tbody tr td table tbody tr').nth(8).find('td').nth(109).find('table tbody tr td table tbody tr td input')"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "offsetX":101,
+                        "offsetY":9
+                     },
+                     "callsite":"45",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('.dxeEditArea_XafTheme.dxeEditAreaSys').nth(15)"
+                     },
+                     "options":{
+                        "replace":true
+                     },
+                     "text":"ObjectChanged"
+                  },
+                  {
+                     "type":"press-key",
+                     "studio":{
+                        
+                     },
+                     "callsite":"46",
+                     "keys":"enter",
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"57",
+                     "path":"./tc_1/3.png"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('SiteType').nth(1).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 td').withText('SiteType').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 [title=\"SiteType\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 .dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_65609373_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_21257363_LE_v4_DXDataRow0 td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"SiteType\"]').innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('SiteType').nth(1).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(3).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxgvDataRow_XafTheme td').withText('SiteType').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(40).find('td').nth(4).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"49",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('SiteType').nth(1).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"SiteType\""
+                     },
+                     "message":"Property Name = SiteType exists"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('DP').nth(1).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 td').withText('DP').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 [title=\"DP\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 .dx-nowrap.dxgv.dx-al').nth(4).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 td').nth(5).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"DP\"]').innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('DP').nth(1).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(4).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxgvDataRow_XafTheme.dxgvLVR td').withText('DP').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(40).find('td').nth(5).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"50",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('DP').nth(1).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"DP\""
+                     },
+                     "message":"Old Value = DP exists"
+                  },
+                  {
+                     "type":"assertion",
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('td').withText('DS').nth(1).innerText"
+                              },
+                              "ruleType":"$text$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 td').withText('DS').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 [title=\"DS\"]').innerText"
+                              },
+                              "ruleType":"$attr$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 .dx-nowrap.dxgv.dx-al').nth(5).innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_v2_58677712_MainLayoutEdit_xaf_l23_pg_xaf_l30_xaf_dviAuditTrail_v4_34045226_LE_v4_DXDataRow0 td').nth(6).innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[title=\"DS\"]').innerText"
+                              },
+                              "ruleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] td').withText('DS').nth(1).innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dx-nowrap.dxgv.dx-al').nth(5).innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.dxgvDataRow_XafTheme.dxgvLVR td').withText('DS').innerText"
+                              },
+                              "ruleType":"$text$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(28).find('div').nth(2).find('div div div').nth(168).find('div div').nth(3).find('div div div div div div').nth(15).find('div table tbody tr td table tbody tr').nth(40).find('td').nth(6).innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ],
+                        "selectorType":"CSS Selector",
+                        "selectorPostfix":".innerText"
+                     },
+                     "callsite":"51",
+                     "assertionType":"eql",
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('td').withText('DS').nth(1).innerText"
+                     },
+                     "options":{
+                        
+                     },
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"DS\""
+                     },
+                     "message":"New Value = DS exists"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"47",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Sites')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"48",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('New')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        
+                     },
+                     "callsite":"52",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[id*=Abbreviation_Edit_I]')"
+                     },
+                     "options":{
+                        
+                     },
+                     "text":"ST_01"
+                  },
+                  {
+                     "type":"type-text",
+                     "studio":{
+                        
+                     },
+                     "callsite":"53",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('input[id*=SiteType_Edit_I]')"
+                     },
+                     "options":{
+                        "replace":true
+                     },
+                     "text":"DS"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"54",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Save')"
+                     },
+                     "options":{
+                        
+                     }
+                  },
+                  {
+                     "type":"take-screenshot",
+                     "studio":{
+                        
+                     },
+                     "callsite":"58",
+                     "path":"./tc_1/4.png"
+                  },
+                  {
+                     "actual":{
+                        "type":"js-expr",
+                        "value":"Selector('.ErrorMessage').innerText"
+                     },
+                     "assertionType":"eql",
+                     "callsite":"13",
+                     "expected":{
+                        "type":"js-expr",
+                        "value":"\"Problems were detected during data validation. Please read the information below to understand what the issues are and how you can correct them.\\n- A site with this Abbrevation/Type combination already exists\\n- There is an object with the same value specified for \\\"Abbreviation\\\". \\\"Abbreviation\\\" values must be unique.\""
+                     },
+                     "options":{
+                        
+                     },
+                     "studio":{
+                        "assertionMode":"checkElement",
+                        "selectorPostfix":".innerText",
+                        "selectorType":"CSS Selector",
+                        "selectors":[
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.ErrorMessage').innerText"
+                              },
+                              "ruleType":"$edited$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_ErrorInfo .ErrorMessage').innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('#Vertical_ErrorInfo table').innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"id"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] .ErrorMessage').innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('[name=\"form2\"] div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(27).find('div div table').innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"$attr$"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.ErrorMessage').innerText"
+                              },
+                              "ruleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.width100.viewSite .ErrorMessage').innerText"
+                              },
+                              "ruleType":"class",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('.width100.viewSite div div table').innerText"
+                              },
+                              "ruleType":"$dom$",
+                              "ancestorRuleType":"class"
+                           },
+                           {
+                              "rawSelector":{
+                                 "type":"js-expr",
+                                 "value":"Selector('form div').nth(3).find('div').nth(24).find('div').nth(12).find('div').nth(27).find('div div table').innerText"
+                              },
+                              "ruleType":"$dom$"
+                           }
+                        ]
+                     },
+                     "type":"assertion",
+                     "message":"Error label verification."
+                  },
+                  {
+                     "callsite":"27",
+                     "dialogHandler":{
+                        "type":"js-expr",
+                        "value":"(dialogType, message, url) => {\n    if (dialogType === 'confirm' && message === 'Unsaved changes will be lost. Do you want to proceed?')\n        return true;\n\n    throw Error(`An unexpected ${dialogType} dialog with the message \"${message}\" appeared on ${url}.`);\n}"
+                     },
+                     "studio":{
+                        "expectedDialogs":[
+                           {
+                              "message":"Unsaved changes will be lost. Do you want to proceed?",
+                              "name":"confirm",
+                              "returnValue":true,
+                              "url":null
+                           }
+                        ],
+                        "mode":"only-expected"
+                     },
+                     "type":"set-native-dialog-handler"
+                  },
+                  {
+                     "type":"click",
+                     "studio":{
+                        
+                     },
+                     "callsite":"24",
+                     "selector":{
+                        "type":"js-expr",
+                        "value":"Selector('span').withText('Log Off')"
+                     },
+                     "options":{
+                        
+                     }
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
